@@ -21,9 +21,6 @@ I lead data science teams at **Yum! Brands** that build recommendation engines, 
   <img alt="Impact: 5M+ daily users, +10% conversion, 2,000+ stores forecast, +25% forecast accuracy" src="./assets/impact-light.svg" width="100%">
 </picture>
 
-> [!TIP]
-> **Currently building Uttamix**: a Bayesian marketing mix modelling tool. Upload weekly spend and revenue, add what you already believe as priors, and get each channel's true contribution with honest uncertainty, plus a recommended budget split. The name joins Sanskrit *uttama* ("optimal") with *mix*.
-
 ## Toolbox
 
 <p align="center">

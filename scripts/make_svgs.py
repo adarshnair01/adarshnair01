@@ -6,6 +6,7 @@ No scripts, no external fonts.
 """
 import math
 import sys
+from xml.sax.saxutils import escape
 from pathlib import Path
 
 OUT = Path(sys.argv[1])
@@ -25,7 +26,7 @@ THEMES = {
 ROLES = [
     "Data Science Manager",
     "Machine Learning Engineer",
-    "Building Uttamix: Bayesian MMM",
+    "Recommendation Systems & Forecasting",
 ]
 
 
@@ -59,7 +60,7 @@ def header(t):
       <clipPath id="clip{i}"><rect x="64" y="190" height="44" width="0">
         <animate attributeName="width" values="0;{w:.0f};{w:.0f};0;0" keyTimes="0;0.12;0.31;0.33;1" dur="{cycle}s" begin="{begin}" repeatCount="indefinite"/>
       </rect></clipPath>
-      <text x="64" y="222" font-size="30" font-weight="500" fill="{t['text']}" clip-path="url(#clip{i})">{role}</text>
+      <text x="64" y="222" font-size="30" font-weight="500" fill="{t['text']}" clip-path="url(#clip{i})">{escape(role)}</text>
       <rect y="196" width="3" height="32" fill="{t['a1']}" x="66">
         <animate attributeName="x" values="66;{66 + w:.0f};{66 + w:.0f};66;66" keyTimes="0;0.12;0.31;0.33;1" dur="{cycle}s" begin="{begin}" repeatCount="indefinite"/>
         <animate attributeName="opacity" values="1;1;0;0;1" keyTimes="0;0.5;0.51;0.99;1" dur="0.9s" repeatCount="indefinite"/>
